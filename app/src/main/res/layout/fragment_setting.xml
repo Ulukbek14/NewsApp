@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/setting_fragmentColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragment.setting.SettingFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CIV_setting"
+        tools:src="@tools:sample/avatars"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:background="@color/setting_imageColor"
+        android:layout_width="110dp"
+        android:layout_height="110dp"/>
+
+    <TextView
+        android:id="@+id/Name_tv_setting"
+        android:text="Samanta Ravondaun"
+        android:textSize="18dp"
+        android:textColor="@color/setting_texColor3"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/CIV_setting"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Account_tv_setting"
+        android:text="samrav@gmail.com"
+        android:textSize="15dp"
+        android:textColor="@color/setting_texColor3"
+        app:layout_constraintTop_toBottomOf="@id/Name_tv_setting"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@id/CIV_setting"
+        android:layout_marginLeft="10dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/Edit_mb_setting"
+        android:text="Edit"
+        android:backgroundTint="@color/setting_buttonColor"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/Name_tv_setting"
+        android:layout_marginLeft="15dp"
+        app:cornerRadius="10dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/Preferences_tv_setting"
+        android:text="Preferences"
+        android:textColor="@color/setting_textColor2"
+        android:textSize="18dp"
+        app:layout_constraintTop_toBottomOf="@id/CIV_setting"
+        android:layout_marginTop="50dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/DarkMode_iv_setting"
+        android:background="@drawable/ic_dark_mode"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Preferences_tv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/DarkMode_tv_setting"
+        android:text="DarkMode"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Preferences_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/DarkMode_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/DarkMode_sc_setting"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+        app:layout_constraintTop_toBottomOf="@id/Preferences_tv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/DarkMode_tv_setting"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Notification_iv_setting"
+        android:background="@drawable/ic_notifications"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/DarkMode_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Notification_tv_setting"
+        android:text="Notification"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/DarkMode_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Notification_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Notification_sc_setting"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+        app:layout_constraintTop_toBottomOf="@id/DarkMode_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toRightOf="@id/Notification_tv_setting"
+        android:layout_marginLeft="140dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Summary_tv_setting"
+        android:text="Summary"
+        android:textSize="18dp"
+        android:textColor="@color/setting_textColor2"
+        app:layout_constraintTop_toBottomOf="@id/Notification_iv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Location_iv_setting"
+        android:background="@drawable/ic_location"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Summary_tv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Location_tv_setting"
+        android:text="News by location"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Summary_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Location_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/Location_sc_setting"
+        android:thumb="@drawable/thumb"
+        app:track="@drawable/track"
+        app:layout_constraintTop_toBottomOf="@id/Summary_tv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/Location_tv_setting"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Time_iv_setting"
+        android:background="@drawable/ic_access_time"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Location_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Time_tv_setting"
+        android:text="Time to read"
+        android:textSize="17dp"
+        android:textColor="@color/setting_textColor"
+        app:layout_constraintTop_toBottomOf="@id/Location_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Time_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/Time_ib_setting"
+        android:background="@drawable/ic_arrow_forward"
+        android:backgroundTint="@color/setting_imageButtonColor"
+        app:layout_constraintTop_toBottomOf="@id/Location_sc_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/Time_tv_setting"
+        android:layout_marginLeft="170dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Language_iv_setting"
+        android:background="@drawable/ic_language"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Time_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Language_tv_setting"
+        android:text="Language"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Time_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Language_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/Perevod_tv_setting"
+        android:text="English"
+        android:textColor="@color/setting_textColor2"
+        android:textSize="15dp"
+        app:layout_constraintTop_toBottomOf="@id/Time_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Language_tv_setting"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/Language_ib_setting"
+        android:background="@drawable/ic_arrow_forward"
+        android:backgroundTint="@color/setting_imageButtonColor"
+        app:layout_constraintTop_toBottomOf="@id/Time_ib_setting"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/Language_tv_setting"
+        android:layout_marginLeft="190dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Block_iv_setting"
+        android:background="@drawable/ic_block"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Language_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Block_tv_setting"
+        android:text="Block content and sources"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Language_iv_setting"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toRightOf="@id/Block_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/Block_ib_setting"
+        android:background="@drawable/ic_arrow_forward"
+        android:backgroundTint="@color/setting_imageButtonColor"
+        app:layout_constraintTop_toBottomOf="@id/Language_ib_setting"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/Block_tv_setting"
+        android:layout_marginLeft="62dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/Help_iv_setting"
+        android:background="@drawable/ic_help"
+        android:backgroundTint="@color/setting_imageColor2"
+        app:layout_constraintTop_toBottomOf="@id/Block_iv_setting"
+        android:layout_marginTop="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="7dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"/>
+
+    <TextView
+        android:id="@+id/Help_tv_setting"
+        android:text="Help"
+        android:textColor="@color/setting_textColor"
+        android:textSize="17dp"
+        app:layout_constraintTop_toBottomOf="@id/Block_tv_setting"
+        android:layout_marginTop="40dp"
+        app:layout_constraintLeft_toRightOf="@id/Help_iv_setting"
+        android:layout_marginLeft="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:id="@+id/Help_ib_setting"
+        android:background="@drawable/ic_arrow_forward"
+        android:backgroundTint="@color/setting_imageButtonColor"
+        app:layout_constraintTop_toBottomOf="@id/Block_ib_setting"
+        android:layout_marginTop="35dp"
+        app:layout_constraintLeft_toRightOf="@id/Help_tv_setting"
+        android:layout_marginLeft="230dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

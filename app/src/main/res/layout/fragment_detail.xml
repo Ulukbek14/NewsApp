@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fillViewport="true"
+    tools:context=".ui.fragment.detail.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/detail_iv1"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="275dp"/>
+
+        <TextView
+            android:id="@+id/detail_tv1"
+            android:text="Travel"
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            app:layout_constraintTop_toBottomOf="@id/detail_iv1"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv2"
+            android:text="What makes Germans so Orderly?"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv1"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv3"
+            android:text="By Steven W. Thrasher  | May 30,2020 - 12:24"
+            android:textColor="#989898"
+            android:textSize="13dp"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv2"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="20dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv4"
+            android:text="For centuries, Germany has been synonymous with order. So how can a rule-abiding nation also have an anything-goes spirit?"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv3"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv5"
+            android:text="On the high-speed train gliding smoothy from Berlin to Dusseldorf, a young man started chatting to me. He eventually asked, 'What are some og the cultural differences you've noticed between Germans and Americans?'"
+            android:textSize="18dp"
+            android:textColor="#737373"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv4"
+            android:layout_marginTop="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv6"
+            android:text="As if on cue, a middle-aged woman hovered over us and gave a harsh, 'Shh!' with her finger pressed against her lips. She pointed to a sign of a mobile phone with a cross through it, indicating that we were in the Ruhebereich, the quiet carriage of the train. While there's not mush documentation og the phrase in the centuries after Luther, a 1930 atricle published in The New York Times claimed that Paul von Hindenburg, the last president of the Weimar Republic, had made the phrase 'world famous'."
+            android:textSize="18dp"
+            android:textColor="#737373"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv5"
+            android:layout_marginTop="15dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/detail_iv2"
+            tools:src="@tools:sample/backgrounds/scenic"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv6"
+            android:layout_marginTop="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="430dp"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:id="@+id/detail_tv7"
+            android:text="Bamberg Regnitz River Bavaria Cities"
+            android:textColor="#989898"
+            android:textSize="13dp"
+            app:layout_constraintTop_toBottomOf="@id/detail_iv2"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv8"
+            android:text="The expression became further tied to German culture when Hindenburg graced the cover of TIME magazine in 1934 with the exclamation 'Ordnung muss sein!' printed underneath his photo. The cover story, 'Germany: Crux of Crisis', quotes Hindenburg shouting his 'useful aphorism which servers him on all occasions' at Adolf Hitler while discussing politics. 'Order is considered to be a Prussian value on equal standing with fulfilling obligations, punctuality, hard work and honesty,'said Christina Rottgers, a German culture espert who helps international companies understand the German mindest to work with them effectively."
+            android:textSize="18dp"
+            android:textColor="#737373"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv7"
+            android:layout_marginTop="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/detail_btn"
+            android:text="See all comments(15)"
+            android:textColor="#737373"
+            android:backgroundTint="#DDDCDC"
+            app:layout_constraintTop_toBottomOf="@id/detail_tv8"
+            android:layout_marginTop="50dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            app:cornerRadius="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/detail_tv9"
+            android:text="Popular in Tips"
+            android:textSize="20dp"
+            android:textColor="#737373"
+            app:layout_constraintTop_toBottomOf="@id/detail_btn"
+            android:layout_marginTop="50dp"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginRight="15dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
