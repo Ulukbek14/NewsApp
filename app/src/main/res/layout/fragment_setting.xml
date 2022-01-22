@@ -23,7 +23,7 @@
         android:id="@+id/Name_tv_setting"
         android:text="Samanta Ravondaun"
         android:textSize="18dp"
-        android:textColor="@color/setting_texColor3"
+        android:textColor="@color/setting_textColor1"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="35dp"
         app:layout_constraintLeft_toRightOf="@id/CIV_setting"
@@ -35,7 +35,7 @@
         android:id="@+id/Account_tv_setting"
         android:text="samrav@gmail.com"
         android:textSize="15dp"
-        android:textColor="@color/setting_texColor3"
+        android:textColor="@color/setting_textColor1"
         app:layout_constraintTop_toBottomOf="@id/Name_tv_setting"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toRightOf="@id/CIV_setting"
@@ -46,12 +46,12 @@
     <com.google.android.material.button.MaterialButton
         android:id="@+id/Edit_mb_setting"
         android:text="Edit"
+        app:cornerRadius="5dp"
         android:backgroundTint="@color/setting_buttonColor"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="35dp"
         app:layout_constraintLeft_toRightOf="@id/Name_tv_setting"
         android:layout_marginLeft="15dp"
-        app:cornerRadius="10dp"
         android:layout_width="100dp"
         android:layout_height="50dp"/>
 
@@ -81,7 +81,7 @@
     <TextView
         android:id="@+id/DarkMode_tv_setting"
         android:text="DarkMode"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/Preferences_tv_setting"
         android:layout_marginTop="40dp"
@@ -115,7 +115,7 @@
     <TextView
         android:id="@+id/Notification_tv_setting"
         android:text="Notification"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/DarkMode_tv_setting"
         android:layout_marginTop="40dp"
@@ -161,7 +161,7 @@
     <TextView
         android:id="@+id/Location_tv_setting"
         android:text="News by location"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/Summary_tv_setting"
         android:layout_marginTop="40dp"
@@ -196,7 +196,7 @@
         android:id="@+id/Time_tv_setting"
         android:text="Time to read"
         android:textSize="17dp"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         app:layout_constraintTop_toBottomOf="@id/Location_tv_setting"
         android:layout_marginTop="40dp"
         app:layout_constraintLeft_toRightOf="@id/Time_iv_setting"
@@ -229,24 +229,12 @@
     <TextView
         android:id="@+id/Language_tv_setting"
         android:text="Language"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/Time_tv_setting"
         android:layout_marginTop="40dp"
         app:layout_constraintLeft_toRightOf="@id/Language_iv_setting"
         android:layout_marginLeft="60dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-
-    <TextView
-        android:id="@+id/Perevod_tv_setting"
-        android:text="English"
-        android:textColor="@color/setting_textColor2"
-        android:textSize="15dp"
-        app:layout_constraintTop_toBottomOf="@id/Time_tv_setting"
-        android:layout_marginTop="40dp"
-        app:layout_constraintLeft_toRightOf="@id/Language_tv_setting"
-        android:layout_marginLeft="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
@@ -275,7 +263,7 @@
     <TextView
         android:id="@+id/Block_tv_setting"
         android:text="Block content and sources"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/Language_iv_setting"
         android:layout_marginTop="30dp"
@@ -309,7 +297,7 @@
     <TextView
         android:id="@+id/Help_tv_setting"
         android:text="Help"
-        android:textColor="@color/setting_textColor"
+        android:textColor="@color/setting_textColor3"
         android:textSize="17dp"
         app:layout_constraintTop_toBottomOf="@id/Block_tv_setting"
         android:layout_marginTop="40dp"
